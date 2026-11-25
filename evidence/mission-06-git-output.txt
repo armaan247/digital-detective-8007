@@ -1,0 +1,43 @@
+Mission 06 — Git & GitHub Command Output (Privacy-Safe)
+
+$ git log --oneline -n 8
+3fe3343 (HEAD -> main, origin/main) Record verified commit details for Mission 05
+a4bc463 Build number converter and practise data representation
+b3bde4b Record verified commit details for Mission 04
+84cefe6 Compare compilers and interpreters
+cf90f84 Record verified commit details for Mission 03
+f80ecfe Document operating system and file management
+ee85a60 Record verified commit details for Mission 02
+c4d0f91 Complete Terminal and file management mission
+
+$ git switch -c update-about
+Switched to a new branch 'update-about'
+
+# Edited README.md to add "## My Learning"
+
+$ git status
+On branch update-about
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   README.md
+
+$ git add README.md
+$ git commit -m "Add My Learning section to root README"
+[update-about fd90a66] Add My Learning section to root README
+ 1 file changed, 7 insertions(+), 1 deletion(-)
+
+$ git push -u origin update-about
+remote: Create a pull request for 'update-about' on GitHub by visiting:
+remote:      https://github.com/armaan247/digital-detective-8007/pull/new/update-about
+To https://github.com/armaan247/digital-detective-8007.git
+ * [new branch]      update-about -> update-about
+
+$ git switch main
+Switched to branch 'main'
+
+$ git branch -a
+* main
+  update-about
+  remotes/origin/main
+  remotes/origin/update-about
