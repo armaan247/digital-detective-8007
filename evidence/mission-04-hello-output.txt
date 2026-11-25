@@ -1,0 +1,7 @@
+Mission 04 — hello.py Execution Output (Privacy-Safe)
+
+$ python3 --version
+Python 3.14.6
+
+$ python3 mission-04-programs/hello.py
+Hello from Python
