@@ -136,5 +136,6 @@ Running `ls -l notes.txt` inside `mission-02-terminal/terminal-practice/` return
 ## 9. Commit Details
 
 - Commit message: `Document operating system and file management`
+- Commit hash: `f80ecfe`
 - Branch: `main`
-- Status: Ready to commit and push to `origin/main`.
+- Status: Pushed to `origin/main` and verified.
