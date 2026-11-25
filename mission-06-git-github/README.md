@@ -49,15 +49,15 @@ Throughout the earlier missions and in this mission, I checked repository status
 - **Branch:** A separate, parallel line of development inside the repository. Teams use branches so multiple people can work on different changes at the same time without breaking the stable `main` branch.
 - **Pull Request (PR):** A GitHub request asking to review and merge changes from one branch (such as `update-about`) into another (such as `main`). It lets teammates inspect the exact file differences, leave comments, and verify everything before merging into the shared codebase.
 
-#### Pull Request Status (`NEEDS USER INPUT`)
+#### Pull Request Status (Completed — Open / Unmerged)
 
-- **Branch status:** The `update-about` branch (commit `fd90a66`) has been committed and pushed to GitHub (`origin/update-about`).
-- **Pull Request status:** **NEEDS USER INPUT — Not yet created on GitHub.** Opening a Pull Request on GitHub requires signing into the GitHub web interface in a browser (`gh` CLI is not installed).
-- **Action needed from user:**
-  1. Open `https://github.com/armaan247/digital-detective-8007/pull/new/update-about` in your browser.
-  2. Enter a short description explaining the `## My Learning` update to `README.md` and click **Create pull request** (`update-about` -> `main`).
-  3. Review the changed file, and merge the PR only if your instructor asked you to merge it.
-  4. If you merge the PR on GitHub, run `git switch main && git pull origin main` in Terminal to bring the merged update onto your local `main` branch, then update this status section with the PR number and merge status.
+- **Branch status:** The `update-about` branch (commit `fd90a66`) is committed and pushed to GitHub (`origin/update-about`).
+- **Pull Request number & title:** `#1` — `Update About section`
+- **Pull Request URL:** [PR #1 on GitHub](https://github.com/armaan247/digital-detective-8007/pull/1) (`https://github.com/armaan247/digital-detective-8007/pull/1`)
+- **Source branch → Target branch:** `update-about` → `main`
+- **Commit included:** `fd90a66` (`Add My Learning section to root README`)
+- **Status:** **OPEN** (a description/comment has been added to the PR).
+- **Merge status:** **Unmerged** — the PR intentionally remains open and has not been merged because merging was not instructed.
 
 ---
 
@@ -101,13 +101,13 @@ Throughout the earlier missions and in this mission, I checked repository status
 
 ## 6. Difficulties Faced
 
-- Creating the Pull Request directly from Terminal was not possible because the GitHub CLI (`gh`) is not installed on this Mac, so the PR creation step on GitHub's website requires opening the browser manually.
+- Creating the Pull Request directly from Terminal was not possible because the GitHub CLI (`gh`) is not installed on this Mac, so the Pull Request step had to be completed on the GitHub website in a browser.
 
 ---
 
 ## 7. How I Resolved Them
 
-- I pushed the `update-about` branch to GitHub (`fd90a66`), recorded the exact GitHub compare/PR creation URL, and clearly documented the remaining browser step under Task 6.3 as `NEEDS USER INPUT` rather than installing unapproved tools or claiming the PR already exists.
+- I pushed the `update-about` branch (`fd90a66`) to GitHub from Terminal, then opened Pull Request #1 (`Update About section`) on GitHub in the browser with a description explaining the change and left it open without merging as instructed.
 
 ---
 
@@ -118,13 +118,14 @@ Throughout the earlier missions and in this mission, I checked repository status
 | [Mission 06 README](README.md) | Git workflow explanations, branch/PR details, and 9-operation Git command glossary |
 | [Mission 06 Git output](../evidence/mission-06-git-output.txt) | Privacy-safe log of `git log`, `git switch`, `git commit`, `git push`, and `git branch -a` |
 | Remote branch `origin/update-about` (`fd90a66`) | Pushed branch containing the `## My Learning` update in [`README.md`](../README.md) |
+| [GitHub Pull Request #1](https://github.com/armaan247/digital-detective-8007/pull/1) | Open, unmerged PR (`Update About section`) from `update-about` into `main` |
 
 ---
 
 ## 9. Commit Details
 
-- Commit message: `Complete Git and GitHub collaboration mission` (on `main`)
-- Commit hash: `e63cf88`
+- Commit message: `Complete Git and GitHub collaboration mission` (`e63cf88`), followed by `Record verified commit details for Mission 06` (`12a1e9c`) and `Document Mission 06 pull request status` (on `main`)
 - Related branch commit: `fd90a66` (`Add My Learning section to root README` pushed to `origin/update-about`)
+- Pull Request: `#1` (`Update About section`) — `https://github.com/armaan247/digital-detective-8007/pull/1` (**OPEN**, intentionally unmerged)
 - Branch: `main`
-- Status: Pushed to `origin/main` and verified (Task 6.3 GitHub web PR creation marked `NEEDS USER INPUT`).
+- Status: Pushed to `origin/main` and verified; PR #1 is live on GitHub and intentionally left open.

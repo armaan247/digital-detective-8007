@@ -29,7 +29,7 @@ All required folders and files were verified as present:
 | [`mission-03-operating-system/README.md`](../mission-03-operating-system/README.md) | Verified | macOS details, processes/PIDs, paths, permissions, and OS responsibilities |
 | [`mission-04-programs/README.md`](../mission-04-programs/README.md) + [`hello.py`](../mission-04-programs/hello.py) | Verified | Working `hello.py` script and compiler vs. interpreter comparison |
 | [`mission-05-numbers-data/README.md`](../mission-05-numbers-data/README.md) + [`number_converter.py`](../mission-05-numbers-data/number_converter.py) | Verified | Manual conversions, Python checks, working converter, and ASCII/UTF-8 notes |
-| [`mission-06-git-github/README.md`](../mission-06-git-github/README.md) | Verified (PR `NEEDS USER INPUT`) | Git workflow, `update-about` branch (`fd90a66`), Pull Request status, and Git glossary |
+| [`mission-06-git-github/README.md`](../mission-06-git-github/README.md) | Verified | Git workflow, `update-about` branch (`fd90a66`), open PR #1 (`Update About section`), and Git glossary |
 | [`mission-07-networking/README.md`](../mission-07-networking/README.md) | Verified | Network concepts, privacy-safe `ping`/`nslookup` results, and website loading trace |
 | [`mission-08-final-report/README.md`](README.md) | Verified | Final review, mission commit log, checklist, and submission instructions |
 | [`evidence/`](../evidence/) | Verified | Privacy-safe terminal and program outputs for Missions 02–07 |
@@ -42,7 +42,7 @@ All required folders and files were verified as present:
 - **Corrections made during final review:**
   - Improved the initial Mission 01 draft wording for natural student-level explanations and fixed the FaceTime camera description for macOS.
   - Redacted all occurrences of local macOS usernames, home folder paths, personal email addresses, and the local DNS resolver IP address across all READMEs and `evidence/` files (`grep` check confirmed clean).
-  - Updated [`README.md`](../README.md) above `## Mission Documentation and Commits` so the open `update-about` branch (`fd90a66`) remains cleanly mergeable into `main` without conflicts.
+  - Kept the `## My Learning` section on the `update-about` branch (`fd90a66`) for [Pull Request #1](https://github.com/armaan247/digital-detective-8007/pull/1) (`Update About section`) separate from `main`, and cleaned up the root [`README.md`](../README.md) on `main` (`76fd8d7`).
 
 ---
 
@@ -56,9 +56,9 @@ All required folders and files were verified as present:
 | Mission 03 — Operating System | Completed | `f80ecfe`, `cf90f84` | Yes (`origin/main`) |
 | Mission 04 — Programs | Completed | `84cefe6`, `b3bde4b` | Yes (`origin/main`) |
 | Mission 05 — Numbers & Data | Completed | `a4bc463`, `3fe3343` | Yes (`origin/main`) |
-| Mission 06 — Git & GitHub | Local & branch pushed; web PR `NEEDS USER INPUT` | `fd90a66` (`update-about`), `e63cf88`, `12a1e9c` (`main`) | Yes (`origin/main` & `origin/update-about`) |
+| Mission 06 — Git & GitHub | Completed (PR #1 open & unmerged by instruction) | `fd90a66` (`update-about`), `e63cf88`, `12a1e9c` (`main`) | Yes (`origin/main` & `origin/update-about`) |
 | Mission 07 — Networking | Completed | `e858aa9`, `0dff36c` | Yes (`origin/main`) |
-| Mission 08 — Final Report | Completed & ready for final commit/push | `Complete final report and verify assignment submission` | Pushed immediately after commit |
+| Mission 08 — Final Report | Completed (final form submission pending) | `0dc1e81`, `76fd8d7` (`main`) | Yes (`origin/main`) |
 
 ---
 
@@ -73,18 +73,21 @@ All required folders and files were verified as present:
 - [x] Compiler and interpreter are compared and `hello.py` runs cleanly.
 - [x] Number conversions include step-by-step manual working and Python verification.
 - [x] `number_converter.py` runs successfully with at least three test values (`13`, `25`, `31`, `255`, `42`).
-- [ ] Git commit history and `update-about` branch are visible; **GitHub Pull Request creation (`NEEDS USER INPUT`)** awaits opening `https://github.com/armaan247/digital-detective-8007/pull/new/update-about` in the browser.
+- [x] Git commit history, `update-about` branch (`fd90a66`), and [Pull Request #1](https://github.com/armaan247/digital-detective-8007/pull/1) (`Update About section`, `update-about` → `main`) are visible on GitHub; the PR is intentionally left open and unmerged because merging was not instructed.
 - [x] LAN, MAN, WAN, DNS, router, protocols, packet switching, and client-server are explained.
 - [x] Root [`README.md`](../README.md) explains the project and how to run `number_converter.py`.
 - [x] Personal information (local username, email, private DNS IP) has been removed/redacted from all outputs and documentation.
-- [x] Working tree will be clean after committing and pushing Mission 08.
+- [x] Working tree will be clean and synchronized with `origin/main` after committing and pushing this update.
 
 ---
 
-### Step 5 — Remaining Student Actions (`NEEDS USER INPUT`)
+### Step 5 — Remaining Student Actions (Pending Submission Steps)
 
-1. **Mission 06 Pull Request:** Open `https://github.com/armaan247/digital-detective-8007/pull/new/update-about` in your browser, create the Pull Request from `update-about` into `main` with a short description, merge only if instructed, and update [`mission-06-git-github/README.md`](../mission-06-git-github/README.md) (and run `git pull` on `main` if merged).
-2. **Verify Public Visibility & Submit URL:** Open `https://github.com/armaan247/digital-detective-8007` in your browser, confirm the repository is set to **Public** and all commits are visible, and submit the repository URL via your instructor's Google Form.
+- **Mission 06 Pull Request (Completed):** [Pull Request #1 (`Update About section`)](https://github.com/armaan247/digital-detective-8007/pull/1) from `update-about` (`fd90a66`) into `main` has been created with a description/comment and is intentionally left **OPEN** (unmerged), as merging was not instructed.
+- **Pending submission tasks:**
+  1. Open `https://github.com/armaan247/digital-detective-8007` in your browser to confirm the repository is set to **Public** and all commits and PR #1 are visible.
+  2. Submit the repository URL using the Google Form shared by your instructor.
+  3. Be prepared to explain any mission in your own words when classes resume.
 
 ---
 
@@ -108,15 +111,13 @@ All required folders and files were verified as present:
 
 ## 6. Difficulties Faced
 
-- Updating the root [`README.md`](../README.md) in Mission 08 while the `update-about` branch from Mission 06 was still unmerged risked creating a merge conflict if the same bottom lines were edited.
-- Because `gh` CLI is not installed and the Google Form is external, creating the GitHub PR in the browser and submitting the form URL could not be completed solely from Terminal.
+- Because `gh` CLI is not installed and the submission Google Form is external, opening the GitHub Pull Request in a browser and submitting the form URL could not be completed solely from Terminal.
 
 ---
 
 ## 7. How I Resolved Them
 
-- Checked `git diff main..update-about -- README.md` first and placed the Mission 08 root README updates above the `## Learning Summary` lines touched by `update-about` so the branch remains conflict-free.
-- Clearly marked both browser-dependent steps (GitHub PR creation and Google Form submission) as `NEEDS USER INPUT` with exact instructions.
+- Created [Pull Request #1 (`Update About section`)](https://github.com/armaan247/digital-detective-8007/pull/1) on GitHub in the browser (keeping it intentionally open and unmerged as instructed), updated the Mission 06, Mission 08, and root documentation with the exact PR details, and kept only the final public-visibility check and Google Form submission marked as pending.
 
 ---
 
@@ -127,11 +128,12 @@ All required folders and files were verified as present:
 | [Mission 08 README](README.md) | Complete repository audit, mission commit table, checklist, and submission notes |
 | [Root README](../README.md) | Updated repository landing page with mission index, instructions, and learning summary |
 | [Evidence folder](../evidence/) | Contains 6 privacy-safe output files for Missions 02–07 |
+| [GitHub Pull Request #1](https://github.com/armaan247/digital-detective-8007/pull/1) | Open, unmerged PR (`Update About section`) from `update-about` (`fd90a66`) into `main` |
 
 ---
 
 ## 9. Commit Details
 
-- Commit message: `Complete final report and verify assignment submission`
+- Mission 08 commits: `0dc1e81` (`Complete final report and verify assignment submission`), `76fd8d7` (`Polish root README for final submission`), and `Document Mission 06 pull request status`
 - Branch: `main`
 - Remote target: `origin/main` (`https://github.com/armaan247/digital-detective-8007`)

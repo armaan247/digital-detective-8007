@@ -16,7 +16,7 @@ The purpose of this assignment is to build practical computer literacy by explor
 | Mission 03 | [Operating System](mission-03-operating-system/README.md) | macOS system info, processes and PIDs, absolute vs. relative paths, permissions, and OS roles |
 | Mission 04 | [Programs](mission-04-programs/README.md) | Creating and running [`hello.py`](mission-04-programs/hello.py) and comparing compilers vs. interpreters |
 | Mission 05 | [Numbers and Data](mission-05-numbers-data/README.md) | Manual conversions, Python verification, [`number_converter.py`](mission-05-numbers-data/number_converter.py), and ASCII/UTF-8 text encoding |
-| Mission 06 | [Git and GitHub](mission-06-git-github/README.md) | Git workflow, creating and pushing branch `update-about`, Pull Request notes, and command glossary |
+| Mission 06 | [Git and GitHub](mission-06-git-github/README.md) | Git workflow, branch `update-about`, [Pull Request #1](https://github.com/armaan247/digital-detective-8007/pull/1) (open), and command glossary |
 | Mission 07 | [Networking](mission-07-networking/README.md) | Network concepts (`LAN`–`Client-server`), privacy-safe `ping`/`nslookup` checks, and website loading steps |
 | Mission 08 | [Final Report](mission-08-final-report/README.md) | Complete repository verification, mission status review, final checklist, and submission steps |
 
@@ -69,8 +69,8 @@ Each mission has a dedicated `README.md` inside its mission folder, with privacy
 ## Project Completion Status
 
 - **Missions 00–05 and 07:** Completed, verified with real outputs, documented in each mission's `README.md`, committed separately, and pushed to `origin/main`.
-- **Mission 06:** Core Git workflow, command glossary, and branch `update-about` are committed and pushed to GitHub. Creating/merging the Pull Request on GitHub (`https://github.com/armaan247/digital-detective-8007/pull/new/update-about`) remains `NEEDS USER INPUT`.
-- **Mission 08:** Final repository review, checklist, and report completed and pushed; submitting the public repository URL via the instructor's Google Form remains for the student.
+- **Mission 06:** Completed and pushed. Branch `update-about` (`fd90a66`) is published and [Pull Request #1 (`Update About section`)](https://github.com/armaan247/digital-detective-8007/pull/1) (`update-about` → `main`) is **open** on GitHub with a description; it remains intentionally unmerged because merging was not instructed.
+- **Mission 08:** Final repository review, checklist, and report completed and pushed; confirming public repository visibility on GitHub and submitting the URL via the instructor's Google Form remain pending for the student.
 
 ## Learning Summary
 
