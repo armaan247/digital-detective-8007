@@ -91,5 +91,6 @@ Not applicable.
 ## 9. Commit Details
 
 - Commit message: `Compare compilers and interpreters`
+- Commit hash: `84cefe6`
 - Branch: `main`
-- Status: Ready to commit and push to `origin/main`.
+- Status: Pushed to `origin/main` and verified.
