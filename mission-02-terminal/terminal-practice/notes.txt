@@ -1,0 +1,2 @@
+First line: practising terminal commands
+Second line: appending text safely

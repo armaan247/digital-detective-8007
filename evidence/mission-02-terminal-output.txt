@@ -1,0 +1,95 @@
+Mission 02 — Terminal Practice & Command Output (Privacy-Safe)
+Note: Local username and home path have been replaced with [redacted].
+
+=== Task 2.1 & 2.3: Basic Commands, Flags, and Pipes ===
+
+$ pwd
+/Users/[redacted]/Desktop/digital-detective-8007
+
+$ ls
+README.md			mission-04-programs
+evidence			mission-05-numbers-data
+mission-00-setup		mission-06-git-github
+mission-01-computer-basics	mission-07-networking
+mission-02-terminal		mission-08-final-report
+mission-03-operating-system
+
+$ ls -l
+total 8
+-rw-r--r--@ 1 [redacted]  staff  2059 Nov 25 19:38 README.md
+drwxr-xr-x@ 2 [redacted]  staff    64 Nov 25 19:16 evidence
+drwxr-xr-x@ 3 [redacted]  staff    96 Nov 25 23:00 mission-00-setup
+drwxr-xr-x@ 3 [redacted]  staff    96 Nov 25 19:16 mission-01-computer-basics
+drwxr-xr-x@ 3 [redacted]  staff    96 Nov 25 19:16 mission-02-terminal
+drwxr-xr-x@ 3 [redacted]  staff    96 Nov 25 19:16 mission-03-operating-system
+drwxr-xr-x@ 3 [redacted]  staff    96 Nov 25 19:16 mission-04-programs
+drwxr-xr-x@ 4 [redacted]  staff   128 Nov 25 19:16 mission-05-numbers-data
+drwxr-xr-x@ 3 [redacted]  staff    96 Nov 25 19:16 mission-06-git-github
+drwxr-xr-x@ 3 [redacted]  staff    96 Nov 25 19:16 mission-07-networking
+drwxr-xr-x@ 3 [redacted]  staff    96 Nov 25 19:16 mission-08-final-report
+
+$ cd .. && pwd
+/Users/[redacted]/Desktop
+
+$ cd digital-detective-8007
+
+$ ls -lah
+total 48
+drwxr-xr-x@ 16 [redacted]  staff   512B Nov 25 22:56 .
+drwx------+ 32 [redacted]  staff   1.0K Nov 25 23:37 ..
+-rw-r--r--@  1 [redacted]  staff    12K Nov 25 19:31 .DS_Store
+drwxr-xr-x@ 12 [redacted]  staff   384B Nov 25 23:59 .git
+-rw-r--r--@  1 [redacted]  staff    10B Nov 25 22:56 .gitignore
+-rw-r--r--@  1 [redacted]  staff   2.0K Nov 25 19:38 README.md
+drwxr-xr-x@  2 [redacted]  staff    64B Nov 25 19:16 evidence
+drwxr-xr-x@  3 [redacted]  staff    96B Nov 25 23:00 mission-00-setup
+drwxr-xr-x@  3 [redacted]  staff    96B Nov 25 19:16 mission-01-computer-basics
+drwxr-xr-x@  4 [redacted]  staff   128B Nov 25 23:59 mission-02-terminal
+drwxr-xr-x@  3 [redacted]  staff    96B Nov 25 19:16 mission-03-operating-system
+drwxr-xr-x@  3 [redacted]  staff    96B Nov 25 19:16 mission-04-programs
+drwxr-xr-x@  4 [redacted]  staff   128B Nov 25 19:16 mission-05-numbers-data
+drwxr-xr-x@  3 [redacted]  staff    96B Nov 25 19:16 mission-06-git-github
+drwxr-xr-x@  3 [redacted]  staff    96B Nov 25 19:16 mission-07-networking
+drwxr-xr-x@  3 [redacted]  staff    96B Nov 25 19:16 mission-08-final-report
+
+$ ls -la | head -n 5
+total 48
+drwxr-xr-x@ 16 [redacted]  staff    512 Nov 25 22:56 .
+drwx------+ 32 [redacted]  staff   1024 Nov 25 23:37 ..
+-rw-r--r--@  1 [redacted]  staff  12292 Nov 25 19:31 .DS_Store
+drwxr-xr-x@ 12 [redacted]  staff    384 Nov 25 23:59 .git
+
+=== Task 2.2: File Changes inside mission-02-terminal/terminal-practice ===
+
+$ cat mission-02-terminal/terminal-practice/notes.txt
+First line: practising terminal commands
+Second line: appending text safely
+
+$ ls -la mission-02-terminal/terminal-practice
+total 16
+drwxr-xr-x@ 6 [redacted]  staff  192 Nov 25 23:59 .
+drwxr-xr-x@ 4 [redacted]  staff  128 Nov 25 23:59 ..
+-rw-r--r--@ 1 [redacted]  staff   76 Nov 25 23:59 notes.txt
+-rw-r--r--@ 1 [redacted]  staff   76 Nov 25 23:59 notes_backup.txt
+-rw-r--r--@ 1 [redacted]  staff    0 Nov 25 23:59 sample.txt
+-rw-r--r--@ 1 [redacted]  staff    0 Nov 25 23:59 sample_renamed.txt
+
+=== Task 2.4: Package Manager Check ===
+
+$ brew --version
+Homebrew 7.0.10
+
+$ brew list
+==> Formulae
+ca-certificates	glib		libvpx		mpg123		sl
+cairo		graphite2	libx11		ncurses		svt-av1
+cowsay		harfbuzz	libxau		openjdk		telnet
+crabz		htop		libxcb		openssl@3	webp
+dav1d		icu4c@78	libxdmcp	openssl@4	x264
+ffmpeg		jpeg-turbo	libxext		opus		x265
+fontconfig	json-c		libxrender	pcre2		xorgproto
+fortune		lame		libyaml		pixman		xz
+freetype	libpng		little-cms2	qrencode	zstd
+gettext		libtiff		lolcat		ruby
+giflib		libunistring	lz4		sdl2-compat
+git		libvmaf		lzo		sdl3
