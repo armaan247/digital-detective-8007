@@ -1,0 +1,53 @@
+Mission 05 — Python Verification & Number Converter Output (Privacy-Safe)
+
+=== Task 5.2 & 5.4: Python Verification ===
+
+>>> bin(13) -> '0b1101'
+>>> bin(25) -> '0b11001'
+>>> int('1010', 2) -> 10
+>>> int('1101', 2) -> 13
+>>> hex(10) -> '0xa'
+>>> hex(31) -> '0x1f'
+>>> int('A', 16) -> 10
+>>> int('1F', 16) -> 31
+>>> hex(int('1111', 2)) -> '0xf'
+>>> ord('A') -> 65
+>>> ord('a') -> 97
+>>> ord('₹') -> 8377
+>>> '₹'.encode('utf-8') -> b'\xe2\x82\xb9'
+
+=== Task 5.3: Running number_converter.py ===
+
+$ python3 mission-05-numbers-data/number_converter.py
+Enter a decimal integer: 13
+Decimal: 13
+Binary: 0b1101
+Hexadecimal: 0xd
+
+$ python3 mission-05-numbers-data/number_converter.py
+Enter a decimal integer: 25
+Decimal: 25
+Binary: 0b11001
+Hexadecimal: 0x19
+
+$ python3 mission-05-numbers-data/number_converter.py
+Enter a decimal integer: 31
+Decimal: 31
+Binary: 0b11111
+Hexadecimal: 0x1f
+
+$ python3 mission-05-numbers-data/number_converter.py
+Enter a decimal integer: 255
+Decimal: 255
+Binary: 0b11111111
+Hexadecimal: 0xff
+
+$ cd mission-05-numbers-data && python3 number_converter.py
+Enter a decimal integer: 42
+Decimal: 42
+Binary: 0b101010
+Hexadecimal: 0x2a
+
+$ python3 mission-05-numbers-data/number_converter.py
+Enter a decimal integer: abc
+Invalid input: please enter a valid whole decimal number.
