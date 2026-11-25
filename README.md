@@ -42,3 +42,9 @@ Each mission has a dedicated `README.md`. As the assignment progresses, document
 ## Learning Summary
 
 This project is intended to build practical familiarity with computers, command-line tools, programming concepts, data, version control, and networking. The mission documents will provide a place to capture what is learned throughout the assignment.
+
+## My Learning
+
+- How a daily computer task moves through the IPOS cycle (Input, Processing, Output, Storage) across hardware and software.
+- How to navigate macOS directories, inspect running processes and file permissions, and chain Terminal commands using flags and pipes (`|`).
+- How decimal, binary, and hexadecimal numbers relate, how ASCII and UTF-8 represent text, and how Python's `int()`, `bin()`, and `hex()` automate conversions.
