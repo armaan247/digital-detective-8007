@@ -1,0 +1,74 @@
+Mission 03 — Operating System, Processes, Paths & Permissions Output (Privacy-Safe)
+Note: Local username and UID/personal path segments have been replaced with [redacted].
+
+=== Task 3.1: OS, Account, Storage & System Activity ===
+
+$ sw_vers
+ProductName:		macOS
+ProductVersion:		27.2.1
+BuildVersion:		26B131
+
+$ uname -smr
+Darwin 27.2.0 arm64
+
+$ whoami
+[redacted]
+
+$ df -h /
+Filesystem        Size    Used   Avail Capacity iused ifree %iused  Mounted on
+/dev/disk3s1s1   460Gi    13Gi   229Gi     6%    487k  2.4G    0%   /
+
+$ top -l 1 -n 8
+Processes: 828 total, 3 running, 825 sleeping, 4032 threads 
+2026/11/26 00:04:56
+Load Avg: 2.57, 2.35, 2.10 
+CPU usage: 7.71% user, 11.42% sys, 80.85% idle 
+SharedLibs: 654M resident, 129M data, 140M linkedit.
+MemRegions: 568845 total, 4140M resident, 237M private, 1645M shared.
+PhysMem: 15G used (2509M wired, 3892M compressor), 556M unused.
+VM: 420T vsize, 57G framework vsize, 0(0) swapins, 0(0) swapouts.
+Networks: packets: 10286705/11G in, 2755396/1695M out.
+Disks: 7511542/166G read, 5431445/131G written.
+
+PID    COMMAND          %CPU TIME     #TH #WQ #PORTS MEM   PURG CMPRS PGRP  PPID  STATE    BOOSTS  %CPU_ME %CPU_OTHRS UID FAULTS COW MSGSENT MSGRECV SYSBSD SYSMACH CSW  PAGEINS IDLEW POWER INSTRS CYCLES JETPRI USER         #MREGS RPRVT VPRVT VSIZE KPRVT KSHRD
+36780  top              0.0  00:00.36 1/1 0   16     4784K 0B   0B    36780 35364 running  *0[1]   0.00000 0.00000    0   1661   119 1190233 595109  4943   601866  439  12      0     0.0   0      0      180    root         N/A    N/A   N/A   N/A   N/A   N/A  
+36776  mdworker_shared  0.0  00:00.08 4   1   49     2800K 0B   0B    36776 1     sleeping *0[1]   0.00000 0.00000    501 1531   82  725     324     1585   679     105  6       0     0.0   0      0      0      [redacted]   N/A    N/A   N/A   N/A   N/A   N/A  
+36773  Google Chrome He 0.0  00:00.22 21  1   136    48M   0B   0B    27797 27797 sleeping  0[328] 0.00000 0.00000    501 14089  118 1113    845     5352   3622    1398 269     8     0.0   0      0      30     [redacted]   N/A    N/A   N/A   N/A   N/A   N/A  
+36769  mdworker_shared  0.0  00:00.08 4   1   49     2800K 0B   0B    36769 1     sleeping *0[1]   0.00000 0.00000    501 1522   82  725     324     1894   679     109  6       0     0.0   0      0      0      [redacted]   N/A    N/A   N/A   N/A   N/A   N/A  
+36756  mdworker_shared  0.0  00:00.06 3   1   52     3296K 0B   0B    36756 1     sleeping *0[1]   0.00000 0.00000    501 1098   89  705     317     1289   671     305  6       0     0.0   0      0      0      [redacted]   N/A    N/A   N/A   N/A   N/A   N/A  
+36755  mdworker_shared  0.0  00:00.06 3   1   52     3248K 0B   0B    36755 1     sleeping *0[1]   0.00000 0.00000    501 1098   89  706     317     1293   673     305  6       0     0.0   0      0      0      [redacted]   N/A    N/A   N/A   N/A   N/A   N/A  
+36753  mdworker_shared  0.0  00:00.06 3   1   52     3264K 0B   0B    36753 1     sleeping *0[1]   0.00000 0.00000    501 1107   89  728     325     1372   704     308  6       0     0.0   0      0      0      [redacted]   N/A    N/A   N/A   N/A   N/A   N/A  
+36752  remindd          0.0  00:00.37 6   5   132    7056K 704K 0B    36752 1     sleeping *0[5]   0.00000 0.00000    501 2237   165 582     169     19777  1742    2034 603     0     0.0   0      0      0      [redacted]   N/A    N/A   N/A   N/A   N/A   N/A  
+
+=== Task 3.2: Process List Sample ===
+
+$ ps -eo pid,pcpu,pmem,comm | head -n 15
+  PID  %CPU %MEM COMM
+    1   0.1  0.1 /sbin/launchd
+  535   0.1  0.3 /usr/libexec/logd
+  536   0.0  0.0 /usr/libexec/centaurid
+  537   0.0  0.0 /usr/libexec/smd
+  538   0.0  0.1 /usr/libexec/UserEventAgent
+  540   0.0  0.0 /System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/FSEvents.framework/Versions/A/Support/fseventsd
+  541   0.0  0.1 /System/Library/PrivateFrameworks/MediaRemote.framework/Support/mediaremoted
+  545   0.0  0.0 /usr/sbin/systemstats
+  547   0.0  0.0 /System/Library/PrivateFrameworks/MobileAccessoryUpdater.framework/Support/accessoryupdaterd
+  548   0.0  0.0 /usr/libexec/uarpassetmanagerd
+  549   0.0  0.0 /usr/libexec/configd
+  550   0.0  0.0 endpointsecurityd
+  551   0.0  0.0 /System/Library/CoreServices/powerd.bundle/powerd
+  552   0.0  0.0 /usr/libexec/IOMFB_bics_daemon
+
+=== Task 3.3: Paths and Permissions ===
+
+$ pwd
+/Users/[redacted]/Desktop/digital-detective-8007
+
+$ cd mission-02-terminal/terminal-practice && pwd
+/Users/[redacted]/Desktop/digital-detective-8007/mission-02-terminal/terminal-practice
+
+$ ls -l notes.txt
+-rw-r--r--@ 1 [redacted]  staff  76 Nov 25 23:59 notes.txt
+
+$ cd ../.. && pwd
+/Users/[redacted]/Desktop/digital-detective-8007
