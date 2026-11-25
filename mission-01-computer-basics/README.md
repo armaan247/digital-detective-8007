@@ -119,5 +119,6 @@ The following are computer-based systems encountered in everyday life (not lapto
 ## 9. Commit Details
 
 - Commit message: `Complete computer basics and IPOS mission`
+- Commit hash: `eb780c5`
 - Branch: `main`
-- Status: Ready to commit and push to `origin/main`.
+- Status: Pushed to `origin/main` and verified.
