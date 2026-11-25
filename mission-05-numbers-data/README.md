@@ -128,5 +128,6 @@ Handled invalid decimal strings cleanly inside `main()` using `try ... except Va
 ## 9. Commit Details
 
 - Commit message: `Build number converter and practise data representation`
+- Commit hash: `a4bc463`
 - Branch: `main`
-- Status: Ready to commit and push to `origin/main`.
+- Status: Pushed to `origin/main` and verified.
