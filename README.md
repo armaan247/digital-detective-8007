@@ -30,9 +30,11 @@ The purpose of this assignment is to build practical computer literacy by explor
 - Version control with Git, branching, and GitHub Pull Requests
 - Computer networking, DNS resolution, connectivity testing, and client-server communication
 
-## Running the Number Converter
+## Running the Python Programs
 
-To run the Mission 05 number converter from its own mission folder:
+### Number Converter (Mission 05)
+
+Run [`number_converter.py`](mission-05-numbers-data/number_converter.py) from its mission folder:
 
 ```bash
 cd mission-05-numbers-data
@@ -47,20 +49,29 @@ python3 mission-05-numbers-data/number_converter.py
 
 Enter any whole decimal number when prompted (for example `13`, `25`, or `255`) to display its binary and hexadecimal values.
 
-## Project Completion Status
+### Hello Script (Mission 04)
 
-- **Missions 00–05 and 07:** Completed, verified with real outputs, documented in each mission's `README.md`, committed separately, and pushed to `origin/main`.
-- **Mission 06:** Core Git workflow, command glossary, and branch `update-about` (`fd90a66`) are committed and pushed to GitHub. Opening/merging the Pull Request on GitHub (`https://github.com/armaan247/digital-detective-8007/pull/new/update-about`) is marked `NEEDS USER INPUT` for browser action.
-- **Mission 08:** Final repository review and verification completed; final Google Form URL submission remains for the student.
+Run [`hello.py`](mission-04-programs/hello.py) from its mission folder or the repository root:
 
-## What I Learned Overall
+```bash
+cd mission-04-programs
+python3 hello.py
+```
 
-Across the nine missions, I connected everyday computer usage with what happens underneath: how input flows through CPU, RAM, screen, and SSD; how macOS schedules processes and enforces permissions; how numbers and text map to binary and hexadecimal; how Python runs scripts; how Git branches track history safely; and how DNS and IP routing load websites.
+```bash
+python3 mission-04-programs/hello.py
+```
 
 ## Mission Documentation and Commits
 
-Each mission has a dedicated `README.md`. As the assignment progresses, document each mission in its README and commit that mission's work separately.
+Each mission has a dedicated `README.md` inside its mission folder, with privacy-safe command outputs stored in [`evidence/`](evidence/). Each completed mission was documented and committed separately.
+
+## Project Completion Status
+
+- **Missions 00–05 and 07:** Completed, verified with real outputs, documented in each mission's `README.md`, committed separately, and pushed to `origin/main`.
+- **Mission 06:** Core Git workflow, command glossary, and branch `update-about` are committed and pushed to GitHub. Creating/merging the Pull Request on GitHub (`https://github.com/armaan247/digital-detective-8007/pull/new/update-about`) remains `NEEDS USER INPUT`.
+- **Mission 08:** Final repository review, checklist, and report completed and pushed; submitting the public repository URL via the instructor's Google Form remains for the student.
 
 ## Learning Summary
 
-This project is intended to build practical familiarity with computers, command-line tools, programming concepts, data, version control, and networking. The mission documents will provide a place to capture what is learned throughout the assignment.
+Across the nine missions, I connected everyday computer usage with what happens underneath: how input flows through CPU, RAM, screen, and SSD in the IPOS cycle; how macOS schedules processes and enforces permissions; how numbers and text map to binary, hexadecimal, ASCII, and UTF-8; how Python runs scripts; how Git branches track history safely; and how DNS and IP routing load websites.
