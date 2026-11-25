@@ -124,7 +124,7 @@ Throughout the earlier missions and in this mission, I checked repository status
 
 ## 9. Commit Details
 
-- Commit message: `Complete Git and GitHub collaboration mission` (`e63cf88`), followed by `Record verified commit details for Mission 06` (`12a1e9c`) and `Document Mission 06 pull request status` (on `main`)
+- Commit message: `Complete Git and GitHub collaboration mission` (`e63cf88`), followed by `Record verified commit details for Mission 06` (`12a1e9c`) and `Document Mission 06 pull request status` (`7cc3601`) on `main`
 - Related branch commit: `fd90a66` (`Add My Learning section to root README` pushed to `origin/update-about`)
 - Pull Request: `#1` (`Update About section`) — `https://github.com/armaan247/digital-detective-8007/pull/1` (**OPEN**, intentionally unmerged)
 - Branch: `main`

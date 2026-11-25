@@ -58,7 +58,7 @@ All required folders and files were verified as present:
 | Mission 05 — Numbers & Data | Completed | `a4bc463`, `3fe3343` | Yes (`origin/main`) |
 | Mission 06 — Git & GitHub | Completed (PR #1 open & unmerged by instruction) | `fd90a66` (`update-about`), `e63cf88`, `12a1e9c` (`main`) | Yes (`origin/main` & `origin/update-about`) |
 | Mission 07 — Networking | Completed | `e858aa9`, `0dff36c` | Yes (`origin/main`) |
-| Mission 08 — Final Report | Completed (final form submission pending) | `0dc1e81`, `76fd8d7` (`main`) | Yes (`origin/main`) |
+| Mission 08 — Final Report | Completed (external form submission & oral explanation pending) | `0dc1e81`, `76fd8d7`, `7cc3601` (`main`) | Yes (`origin/main`) |
 
 ---
 
@@ -66,7 +66,7 @@ All required folders and files were verified as present:
 
 - [x] All mission folders are present and each has its own `README.md`.
 - [x] Every mission `README.md` records the task, commands/tools used, understanding, and difficulties.
-- [x] Every mission has its own meaningful commit, and Missions 00–07 are pushed (Mission 08 pushed at completion).
+- [x] Every mission has its own meaningful commit, and Missions 00–08 are pushed to `origin/main`.
 - [x] IPOS, hardware, software, and everyday computer-system examples are included.
 - [x] Terminal operations, file management (`terminal-practice/`), flags, and pipes are explained.
 - [x] Operating system responsibilities, processes/PIDs, paths, storage, and permissions are covered.
@@ -74,20 +74,20 @@ All required folders and files were verified as present:
 - [x] Number conversions include step-by-step manual working and Python verification.
 - [x] `number_converter.py` runs successfully with at least three test values (`13`, `25`, `31`, `255`, `42`).
 - [x] Git commit history, `update-about` branch (`fd90a66`), and [Pull Request #1](https://github.com/armaan247/digital-detective-8007/pull/1) (`Update About section`, `update-about` → `main`) are visible on GitHub; the PR is intentionally left open and unmerged because merging was not instructed.
+- [x] Repository visibility is verified **Public** (`visibility: public`, `private: false`, unauthenticated HTTP `200` on GitHub).
 - [x] LAN, MAN, WAN, DNS, router, protocols, packet switching, and client-server are explained.
-- [x] Root [`README.md`](../README.md) explains the project and how to run `number_converter.py`.
+- [x] Root [`README.md`](../README.md) explains the project and how to run the Python programs.
 - [x] Personal information (local username, email, private DNS IP) has been removed/redacted from all outputs and documentation.
-- [x] Working tree will be clean and synchronized with `origin/main` after committing and pushing this update.
+- [x] Working tree will be clean and synchronized with `origin/main` after committing and pushing this final audit update.
 
 ---
 
-### Step 5 — Remaining Student Actions (Pending Submission Steps)
+### Step 5 — Remaining External Tasks
 
-- **Mission 06 Pull Request (Completed):** [Pull Request #1 (`Update About section`)](https://github.com/armaan247/digital-detective-8007/pull/1) from `update-about` (`fd90a66`) into `main` has been created with a description/comment and is intentionally left **OPEN** (unmerged), as merging was not instructed.
-- **Pending submission tasks:**
-  1. Open `https://github.com/armaan247/digital-detective-8007` in your browser to confirm the repository is set to **Public** and all commits and PR #1 are visible.
-  2. Submit the repository URL using the Google Form shared by your instructor.
-  3. Be prepared to explain any mission in your own words when classes resume.
+- **GitHub Pull Request #1 & Public Visibility (Verified):** [Pull Request #1 (`Update About section`)](https://github.com/armaan247/digital-detective-8007/pull/1) from `update-about` (`fd90a66`) into `main` is **OPEN** with a description and intentionally unmerged (because merging was not instructed). The repository at `https://github.com/armaan247/digital-detective-8007` is verified **Public**.
+- **Remaining tasks requiring student action:**
+  1. Submit the repository URL (`https://github.com/armaan247/digital-detective-8007`) through the instructor's Google Form.
+  2. Prepare to explain the missions in your own words when classes resume.
 
 ---
 
@@ -98,6 +98,7 @@ All required folders and files were verified as present:
 | `find`, `ls`, `grep` | Verified folder layout, relative links, and zero leaked personal details across all files |
 | `python3` | Re-tested [`hello.py`](../mission-04-programs/hello.py) and [`number_converter.py`](../mission-05-numbers-data/number_converter.py) |
 | `git log --oneline`, `git status`, `git ls-remote` | Verified separate mission commits, clean history, and `origin` synchronization |
+| `curl` (unauthenticated GitHub API & HTTP check) | Verified public repository visibility (`private: false`), HTTP `200`, latest `main` commits, and open PR #1 |
 | VS Code / Editor | Updated root [`README.md`](../README.md) and wrote [`mission-08-final-report/README.md`](README.md) |
 
 ---
@@ -117,7 +118,7 @@ All required folders and files were verified as present:
 
 ## 7. How I Resolved Them
 
-- Created [Pull Request #1 (`Update About section`)](https://github.com/armaan247/digital-detective-8007/pull/1) on GitHub in the browser (keeping it intentionally open and unmerged as instructed), updated the Mission 06, Mission 08, and root documentation with the exact PR details, and kept only the final public-visibility check and Google Form submission marked as pending.
+- Created [Pull Request #1 (`Update About section`)](https://github.com/armaan247/digital-detective-8007/pull/1) on GitHub in the browser (keeping it intentionally open and unmerged as instructed), verified repository public visibility and open PR status via unauthenticated GitHub checks, updated the Mission 06, Mission 08, and root documentation, and clearly listed the remaining Google Form submission and oral explanation tasks.
 
 ---
 
@@ -134,6 +135,6 @@ All required folders and files were verified as present:
 
 ## 9. Commit Details
 
-- Mission 08 commits: `0dc1e81` (`Complete final report and verify assignment submission`), `76fd8d7` (`Polish root README for final submission`), and `Document Mission 06 pull request status`
+- Mission 08 commits: `0dc1e81` (`Complete final report and verify assignment submission`), `76fd8d7` (`Polish root README for final submission`), `7cc3601` (`Document Mission 06 pull request status`), and `Finalize assignment documentation and audit`
 - Branch: `main`
 - Remote target: `origin/main` (`https://github.com/armaan247/digital-detective-8007`)

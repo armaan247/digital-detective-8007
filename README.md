@@ -70,7 +70,7 @@ Each mission has a dedicated `README.md` inside its mission folder, with privacy
 
 - **Missions 00–05 and 07:** Completed, verified with real outputs, documented in each mission's `README.md`, committed separately, and pushed to `origin/main`.
 - **Mission 06:** Completed and pushed. Branch `update-about` (`fd90a66`) is published and [Pull Request #1 (`Update About section`)](https://github.com/armaan247/digital-detective-8007/pull/1) (`update-about` → `main`) is **open** on GitHub with a description; it remains intentionally unmerged because merging was not instructed.
-- **Mission 08:** Final repository review, checklist, and report completed and pushed; confirming public repository visibility on GitHub and submitting the URL via the instructor's Google Form remain pending for the student.
+- **Mission 08:** Final repository review, checklist, audit, and public visibility verification completed and pushed; submitting the repository URL through the instructor's Google Form and preparing to explain the missions in my own words remain pending.
 
 ## Learning Summary
 
