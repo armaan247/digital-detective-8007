@@ -48,4 +48,7 @@ Not applicable.
 
 ## Commit Details
 
-Commit details are pending until the Git commit and GitHub push are completed.
+- Commit message: `Initial project setup`
+- Commit hash: `494d79a`
+- Branch: `main`
+- The commit was successfully pushed to the GitHub remote named `origin`.
