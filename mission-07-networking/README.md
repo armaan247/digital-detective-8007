@@ -105,5 +105,6 @@ I ran safe connectivity and DNS lookup tests for the public domain `example.com`
 ## 9. Commit Details
 
 - Commit message: `Explain networking concepts and website communication`
+- Commit hash: `e858aa9`
 - Branch: `main`
-- Status: Ready to commit and push to `origin/main`.
+- Status: Pushed to `origin/main` and verified.
